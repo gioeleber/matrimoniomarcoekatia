@@ -1,0 +1,6 @@
+[
+  { "href": "time-location", "label": "Orario e location" },
+  { "href": "program", "label": "Programma" },
+  { "href": "adhesion", "label": "Adesione" },
+  { "href": "present", "label": "Regalo" }
+]

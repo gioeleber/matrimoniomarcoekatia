@@ -1,0 +1,23 @@
+---
+interface Props {
+	links: Link[];
+}
+
+type Link = {
+  label: string;
+  href: string;
+}
+
+const { links } = Astro.props;
+---
+
+<header>
+  <nav class="flex px-5 py-4 justify-between items-center">
+    <h1>Matrimonio Marco e Katia</h1>
+    <ul class="flex gap-x-4">
+      {links.map(link => 
+        <li><a href={`#${link.href}`}>{link.label}</a></li>
+      )}
+    </ul>
+  </nav>
+</header>
