@@ -18,7 +18,7 @@ const { links } = Astro.props;
     <h1 class="font-serif text-lg font-bold">Matrimonio Marco e Katia</h1>
     <ul class="gap-x-6 hidden md:flex md:static absolute bg-white top-8 w-full rounded-md drop-shadow-md md:drop-shadow-none md:w-auto" id="menu" role="menu" aria-labelledby="menubutton">
       {links.map(link => 
-        <li><a class="px-4 py-1.5 inline-block md:p-0" href={`#${link.href}`}>{link.label}</a></li>
+        <li><a class="px-4 py-2 inline-block w-full md:p-0 text-center" href={`#${link.href}`}>{link.label}</a></li>
       )}
     </ul>
     <button id="menubutton" aria-haspopup="true" aria-controls="menu" class="w-6 md:hidden absolute right-0">
@@ -30,5 +30,14 @@ const { links } = Astro.props;
 <script>
   const menuButton = document.querySelector("#menubutton")
   const menu = document.querySelector("#menu")
-  menuButton?.addEventListener("click", e => menu?.classList.toggle("hidden"))
+  const body = document.querySelector("body")
+  
+  menuButton?.addEventListener("click", () => menu?.classList.toggle("hidden"))
+  body?.addEventListener("click", (e) => {
+    const t = e.target as HTMLElement
+    const clickElId = t.parentElement?.getAttribute("id");
+    if (clickElId !== "menubutton") {
+      menu?.classList.add("hidden")
+    }
+  })
 </script>
