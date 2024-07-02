@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Section from '../layouts/Section.astro';
 import Slider from '../components/Slider.astro';
+import Button from '../components/Button.astro';
 ---
 
 <Layout title="Matrimonio Marco e Katia">
@@ -9,23 +11,23 @@ import Slider from '../components/Slider.astro';
 			{imgSrc: "https://www.truephotography.com/blog/wp-content/uploads/2016/03/0053Christy_Stephen_pf.jpg"},
 			{imgSrc: "https://www.christianwebhost.com/blog/wp-content/uploads/2019/05/christian-wedding-ceremony.jpeg"},
 		]}/>
-		<h2>Marco e Katia si sposano, finalmente! 🥳</h2>
-		<section id="time-location">
-			<h2>Orario location</h2>
+		<Section id="introduction" title='Marco e Katia si sposano, finalmente! 🥳'>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptatem eos nihil error ipsum porro sequi veniam repellendus iure quaerat accusantium incidunt, deleniti quas quam culpa odio qui. Soluta, nihil?</p>
+		</Section>
+		<Section id="time-location" title='Orario location'>
 			<p>Alla chesa</p>
 			<p>Al rinfresco</p>
-		</section>
-		<section id="program">
-			<h2>Programma</h2>
-			<button>Vedi il programma esteso</button>
-		</section>
-		<section id="adhesion">
-			<h2>Facci sapere se ci sarai</h2>
-			<button>Completa il form di adesione</button>
-		</section>
-		<section id="present">
-			<h2>Cosa ci piacerebbe</h2>
+		</Section>
+		<Section id="program" title='Programma'>
+			<p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptatem eos nihil error ipsum porro sequi veniam repellendus iure quaerat accusantium incidunt, deleniti quas quam culpa odio qui. Soluta, nihil?</p>
+			<Button>Vedi il programma esteso</Button>
+		</Section>
+		<Section id="adhesion" title='Facci sapere se ci sarai'>
+			<p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptatem eos nihil error ipsum porro sequi veniam repellendus iure quaerat accusantium incidunt, deleniti quas quam culpa odio qui. Soluta, nihil?</p>
+			<Button>Completa il form di adesione</Button>
+		</Section>
+		<Section id="present" title='Cosa ci piacerebbe'>
 			<p>Sezione che rimanda all’attenzione sul regalo di nozze e sulla mail di risposta.</p>
-		</section>
+		</Section>
 	</main>
 </Layout>

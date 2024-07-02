@@ -1,4 +1,6 @@
 ---
+import menuIcon from "../img/icons/bars-3.svg";
+
 interface Props {
 	links: Link[];
 }
@@ -11,13 +13,22 @@ type Link = {
 const { links } = Astro.props;
 ---
 
-<header>
-  <nav class="flex px-5 py-4 justify-between items-center">
-    <h1>Matrimonio Marco e Katia</h1>
-    <ul class="flex gap-x-4">
+<header class="sticky top-0 z-10 bg-white px-5 py-4 drop-shadow-md">
+  <nav class="flex justify-center md:justify-between items-center relative">
+    <h1 class="font-serif text-lg font-bold">Matrimonio Marco e Katia</h1>
+    <ul class="gap-x-6 hidden md:flex md:static absolute bg-white top-8 w-full rounded-md drop-shadow-md md:drop-shadow-none md:w-auto" id="menu" role="menu" aria-labelledby="menubutton">
       {links.map(link => 
-        <li><a href={`#${link.href}`}>{link.label}</a></li>
+        <li><a class="px-4 py-1.5 inline-block md:p-0" href={`#${link.href}`}>{link.label}</a></li>
       )}
     </ul>
+    <button id="menubutton" aria-haspopup="true" aria-controls="menu" class="w-6 md:hidden absolute right-0">
+      <img src={menuIcon.src} alt="menu icon">
+    </button>
   </nav>
 </header>
+
+<script>
+  const menuButton = document.querySelector("#menubutton")
+  const menu = document.querySelector("#menu")
+  menuButton?.addEventListener("click", e => menu?.classList.toggle("hidden"))
+</script>
