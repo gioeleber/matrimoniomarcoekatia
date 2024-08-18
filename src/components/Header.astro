@@ -1,5 +1,6 @@
 ---
 import menuIcon from "../img/icons/bars-3.svg";
+import Button from "../components/Button.astro";
 
 interface Props {
 	links: Link[];
@@ -8,17 +9,30 @@ interface Props {
 type Link = {
   label: string;
   href: string;
+  isButton?: boolean;
 }
 
 const { links } = Astro.props;
 ---
 
-<header class="sticky top-0 z-10 bg-white px-5 py-4 drop-shadow-md">
+<header class="sticky top-0 z-10 bg-white px-5 py-3 drop-shadow-md">
   <nav class="flex justify-center md:justify-between items-center relative">
-    <h1 class="font-serif text-lg font-bold">Matrimonio Marco e Katia</h1>
-    <ul class="gap-x-6 hidden md:flex md:static absolute bg-white top-8 w-full rounded-md drop-shadow-md md:drop-shadow-none md:w-auto" id="menu" role="menu" aria-labelledby="menubutton">
+    <h1 class="font-serif text-3xl">Matrimonio Marco e Katia</h1>
+    <ul class="gap-x-6 hidden md:flex md:static absolute bg-white top-8 w-full rounded-lg drop-shadow-md md:drop-shadow-none md:w-auto items-center" id="menu" role="menu" aria-labelledby="menubutton">
       {links.map(link => 
-        <li><a class="px-4 py-2 inline-block w-full md:p-0 text-center" href={`#${link.href}`}>{link.label}</a></li>
+        <li class={link.isButton? "flex justify-center pb-1 px-1 md:p-0": ""}>
+          {link.isButton?
+            <Button customClass="w-full">
+              {link.label}
+            </Button>:
+            <a
+              class="px-4 py-2 inline-block w-full md:p-0 text-center hover:underline"
+              href={`#${link.href}`}
+            >
+              {link.label}
+            </a>
+          }
+        </li>
       )}
     </ul>
     <button id="menubutton" aria-haspopup="true" aria-controls="menu" class="w-6 md:hidden absolute right-0">

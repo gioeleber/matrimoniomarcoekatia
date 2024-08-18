@@ -4,6 +4,7 @@ export default {
   theme: {
     fontFamily: {
       sans: [
+        "Playfair Display Variable",
         "ui-sans-serif",
         "system-ui",
         "sans-serif",
@@ -13,6 +14,7 @@ export default {
         "Noto Color Emoji",
       ],
       serif: [
+        "Island Moments",
         "ui-serif",
         "Georgia, Cambria",
         "Times New Roman",
@@ -20,7 +22,12 @@ export default {
         "serif",
       ],
     },
-    extend: {},
+    extend: {
+      colors: {
+        "light-peach": "#fef0e5",
+        "light-yellow": "#FDF8E2",
+      },
+    },
   },
   plugins: [],
 };
