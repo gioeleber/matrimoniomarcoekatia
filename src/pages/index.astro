@@ -15,14 +15,14 @@ import honeyMoonImg from "../img/honey-moon.jpg";
 			{imgSrc: "https://www.truephotography.com/blog/wp-content/uploads/2016/03/0053Christy_Stephen_pf.jpg"},
 			{imgSrc: "https://www.christianwebhost.com/blog/wp-content/uploads/2019/05/christian-wedding-ceremony.jpeg"},
 		]}/>
-		<Section id="introduction" >
+		<Section id="introduction">
 				<div class="col-span-9">
 					<SectionTitle>
-						Marco e Katia si sposano, finalmente! 🥳
+						Marco e Katia si sposano, finalmente!
 					</SectionTitle>
 					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit asperiores consequuntur ad porro fuga rerum numquam itaque? Rem nisi dolorum praesentium maxime quas fuga culpa sunt. Id, alias distinctio? Nihil?</p>
 				</div>
-				<img src={fediImg.src} class="col-span-3 px-12 pt-4" />
+				<img src={fediImg.src} class="col-span-3 px-24 md:px-12 pt-4" />
 		</Section>
 		<Section id="adhesion" bgColor='bg-light-peach'>
 			<div class="col-span-4">
@@ -54,11 +54,11 @@ import honeyMoonImg from "../img/honey-moon.jpg";
 			</div>
 		</Section>
 		<Section id="present" bgColor='bg-light-yellow'>
-			<div class="col-span-8">
+			<div class="col-span-8 order-2 md:order-1">
 				<SectionTitle>Cosa ci piacerebbe</SectionTitle>
 				<p>Sezione che rimanda all’attenzione sul regalo di nozze e sulla mail di risposta.</p>
 			</div>
-			<img src={honeyMoonImg.src} class="col-span-4 mt-[-5rem]" />
+			<img src={honeyMoonImg.src} class="col-span-4 mt-[-2.5rem] md:mt-[-5rem] order-1 md:order-2" />
 		</Section>
 	</main>
 </Layout>
