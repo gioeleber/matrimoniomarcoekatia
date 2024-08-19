@@ -26,7 +26,8 @@ import flowersImg from "../img/flowers2.png";
 					<SectionTitle>
 						Marco e Katia si sposano, finalmente!
 					</SectionTitle>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit asperiores consequuntur ad porro fuga rerum numquam itaque? Rem nisi dolorum praesentium maxime quas fuga culpa sunt. Id, alias distinctio? Nihil?</p>
+					<p class="mb-3">Eh si’, hai capito bene! E’ arrivato per noi il momento di fare il grande passo e saremo lieti se tu volessi partecipare.</p>
+					<p>In questo sito troverai tutte le informazioni importanti e le spiegazioni sull’evento e su come partecipare.</p>
 				</div>
 				<img src={fediImg.src} class="col-span-3 px-24 md:px-12 pt-4" />
 		</Section>
@@ -36,18 +37,24 @@ import flowersImg from "../img/flowers2.png";
 			</div>
 			<div class="col-span-8">
 				<SectionTitle>Facci sapere se ci sarai</SectionTitle>
-				<p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptatem eos nihil error ipsum porro sequi veniam repellendus iure quaerat accusantium incidunt, deleniti quas quam culpa odio qui. Soluta, nihil?</p>
-				<Button>Completa il form di adesione</Button>
+				<p class="mb-3">Se ti interessa essere dei nostri, blocca subito la data nella tua agenda.</p>
+				<p class="mb-3">Puoi confermare la partecipazione compilando un breve form in cui ci fornirai tutte le informazioni che ci servono per organizzare una festa speciale.</p>
+				<p class="mb-8">Dopo aver inserito le informazioni richieste, clicca su invia e riceverai una email di risposta con tutte le informazioni su come partecipare al regalo di nozze (se lo vorrai ovviamente).</p>
+				<Button>Conferma la tua prenotazione</Button>
 			</div>
 		</Section>
 		<Section id="time-location">
 			<div class="col-span-8 pt-6 order-2 md:order-1">
 				<SectionTitle>
-					La Funzione - Chiesa di San Matrimonio
+					La funzione nella chiesa si San Martino
 				</SectionTitle>
-				<b>Orario 8:00 - link alla mappa</b>
+				<b class="block mb-3">Ore 10:30 - <a class="underline" href="https://www.google.it/maps/place/Chiesa+Parrocchiale+di+San+Martino+Vescovo+-+Pesaro+(citt%C3%A0)/@43.8976383,12.8895736,17z/data=!3m1!4b1!4m6!3m5!1s0x132d1eabe8f7063f:0xb3de8d5e07c58e19!8m2!3d43.8976383!4d12.8921485!16s%2Fg%2F1xtdztt4?entry=ttu"  target="_blank">
+					link alla mappa
+					</a>
+				</b>
 				<div class="relative">
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores natus totam pariatur laborum aperiam tenetur amet ipsa praesentium, dicta eius magnam harum repellat dolor molestiae accusantium odit recusandae! Non, nulla?</p>
+					<p class="mb-3">Ci sarà possibilità di parcheggiare proprio davanti alla chiesa oppure nelle vie limitrofe.</p>
+					<p>Una volta finita la funzione, gettato il riso (o roba piu’ pesante se vi abbiamo annoiati) e fatte le foto di rito, si passa alla seconda fase: quella divertente!</p>
 					<img src={flowersImg.src} alt="" class="w-48 h-48 absolute -left-20 -bottom-20 -z-10 hidden xl:block">
 				</div>
 			</div>
@@ -59,11 +66,14 @@ import flowersImg from "../img/flowers2.png";
 			</div>
 			<div class="col-span-8 pt-6 order-4">
 				<SectionTitle>
-					La Festa - Ristorante la ginestra
+					La festa al Perbacco, Country House
 				</SectionTitle>
-				<b>Orario 14:00 - link alla mappa</b>
+				<b class="block mb-3">Orario 14:00 - <a href="https://www.google.it/maps/place/Perbacco+Country+House+Locanda/@43.744366,13.106211,17z/data=!3m1!4b1!4m6!3m5!1s0x132d0c4617aa13f1:0x3e13845d75003667!8m2!3d43.7443661!4d13.1108244!16s%2Fg%2F1tvrf98c?entry=ttu" class="underline" target="_blank">
+						link alla mappa
+					</a>
+				</b>
 				<div class="relative">
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim autem natus dolores maiores suscipit mollitia doloribus, fugiat iusto aspernatur dolorem id, explicabo iure dolor placeat totam reprehenderit voluptate est architecto!</p>
+					<p>Se ti interessa sapere come si svolgerà l’evento, ti invito a cliccare qui sotto per maggiori informazioni</p>
 					<img src={flowersImg.src} alt="" class="w-48 h-48 absolute -right-20 -bottom-20 -z-10 scale-x-[-1] hidden xl:block">
 				</div>
 			</div>
@@ -74,7 +84,9 @@ import flowersImg from "../img/flowers2.png";
 		<Section id="present" bgColor='bg-light-yellow relative'>
 			<div class="col-span-8 order-2 md:order-1">
 				<SectionTitle>Cosa ci piacerebbe</SectionTitle>
-				<p>Sezione che rimanda all’attenzione sul regalo di nozze e sulla mail di risposta.</p>
+				<p class="mb-3">Il regalo piu’ grande che puoi farci e’ la tua partecipazione all’evento.</p>
+				<p class="mb-3">Se però hai piacere, puoi contribuire al nostro piccolo sogno, regalandoci quello che per noi sarà il viaggio della vita…</p>
+				<p class="mb-3">Per la nostra luna di miele ci piacerebbe tanto coronare il nostro sogno di visitare il Giappone. Fin da piccoli, il mondo orientale ci affascina con tutte le loro tradizioni e particolarità che vorremmo scoprire direttamente con i nostri occhi (non solo sui libri e nelle serie tv).</p>
 			</div>
 			<img src={honeyMoonImg.src} class="col-span-4 mt-[-2.5rem] md:mt-[-5rem] order-1 md:order-2" />
 			<img src={honeyMoonLeftImg.src} alt="" class="absolute left-0 bottom-0 w-16 hidden lg:block">
