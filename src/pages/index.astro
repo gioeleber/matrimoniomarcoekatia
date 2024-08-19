@@ -9,6 +9,7 @@ import corniceFioriImg from "../img/cornice-fiori.png";
 import honeyMoonImg from "../img/honey-moon.jpg";
 import chiesaImg from "../img/chiesa.png";
 import ristoranteImg from "../img/ristorante.jpg";
+import flowersImg from "../img/flowers2.png";
 import Photograph from '../components/Photograph.astro';
 ---
 
@@ -43,7 +44,10 @@ import Photograph from '../components/Photograph.astro';
 					La Funzione - Chiesa di San Matrimonio
 				</SectionTitle>
 				<b>Orario 8:00 - link alla mappa</b>
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores natus totam pariatur laborum aperiam tenetur amet ipsa praesentium, dicta eius magnam harum repellat dolor molestiae accusantium odit recusandae! Non, nulla?</p>
+				<div class="relative">
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores natus totam pariatur laborum aperiam tenetur amet ipsa praesentium, dicta eius magnam harum repellat dolor molestiae accusantium odit recusandae! Non, nulla?</p>
+					<img src={flowersImg.src} alt="" class="w-48 h-48 absolute -left-20 -bottom-20 -z-10 hidden md:block">
+				</div>
 			</div>
 			<div class="col-span-4 order-1 md:order-2">
 				<Photograph src={chiesaImg.src} rotationDirection={"negative"} />
@@ -56,7 +60,10 @@ import Photograph from '../components/Photograph.astro';
 					La Festa - Ristorante la ginestra
 				</SectionTitle>
 				<b>Orario 14:00 - link alla mappa</b>
-				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim autem natus dolores maiores suscipit mollitia doloribus, fugiat iusto aspernatur dolorem id, explicabo iure dolor placeat totam reprehenderit voluptate est architecto!</p>
+				<div class="relative">
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim autem natus dolores maiores suscipit mollitia doloribus, fugiat iusto aspernatur dolorem id, explicabo iure dolor placeat totam reprehenderit voluptate est architecto!</p>
+					<img src={flowersImg.src} alt="" class="w-48 h-48 absolute -right-20 -bottom-20 -z-10 scale-x-[-1] hidden md:block">
+				</div>
 			</div>
 			<div class="col-span-12 flex justify-center pt-12 order-5">
 				<Button>Vai al programma esteso</Button>
