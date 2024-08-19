@@ -7,6 +7,9 @@ import SectionTitle from '../components/SectionTitle.astro';
 import fediImg from "../img/fedi.jpg";
 import corniceFioriImg from "../img/cornice-fiori.png";
 import honeyMoonImg from "../img/honey-moon.jpg";
+import chiesaImg from "../img/chiesa.png";
+import ristoranteImg from "../img/ristorante.jpg";
+import Photograph from '../components/Photograph.astro';
 ---
 
 <Layout title="Matrimonio Marco e Katia">
@@ -35,22 +38,28 @@ import honeyMoonImg from "../img/honey-moon.jpg";
 			</div>
 		</Section>
 		<Section id="time-location">
-			<div class="col-span-12">
+			<div class="col-span-8 pt-6 order-2 md:order-1">
 				<SectionTitle>
 					La Funzione - Chiesa di San Matrimonio
 				</SectionTitle>
 				<b>Orario 8:00 - link alla mappa</b>
 				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores natus totam pariatur laborum aperiam tenetur amet ipsa praesentium, dicta eius magnam harum repellat dolor molestiae accusantium odit recusandae! Non, nulla?</p>
 			</div>
-			<div class="col-span-12">
+			<div class="col-span-4 order-1 md:order-2">
+				<Photograph src={chiesaImg.src} rotationDirection={"negative"} />
+			</div>
+			<div class="col-span-4 order-3">
+				<Photograph src={ristoranteImg.src} rotationDirection={"positive"} />
+			</div>
+			<div class="col-span-8 pt-6 order-4">
 				<SectionTitle>
 					La Festa - Ristorante la ginestra
 				</SectionTitle>
 				<b>Orario 14:00 - link alla mappa</b>
 				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim autem natus dolores maiores suscipit mollitia doloribus, fugiat iusto aspernatur dolorem id, explicabo iure dolor placeat totam reprehenderit voluptate est architecto!</p>
 			</div>
-			<div class="col-span-12 flex justify-center">
-				<Button>Vedi programma esteso</Button>
+			<div class="col-span-12 flex justify-center pt-12 order-5">
+				<Button>Vai al programma esteso</Button>
 			</div>
 		</Section>
 		<Section id="present" bgColor='bg-light-yellow'>

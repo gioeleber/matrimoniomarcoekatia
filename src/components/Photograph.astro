@@ -1,0 +1,19 @@
+---
+interface Props {
+	src: string;
+  rotationDirection: "positive" | "negative"
+}
+
+
+
+const { src, rotationDirection } = Astro.props;
+---
+
+<img
+  class:list={[
+    "shadow-lg p-3 pb-12",
+    `${rotationDirection === "positive"? "" : "-"}rotate-3`
+  ]}
+  src={src}
+  alt=""
+/>
