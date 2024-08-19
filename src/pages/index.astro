@@ -4,13 +4,15 @@ import Section from '../layouts/Section.astro';
 import Slider from '../components/Slider.astro';
 import Button from '../components/Button.astro';
 import SectionTitle from '../components/SectionTitle.astro';
+import Photograph from '../components/Photograph.astro';
 import fediImg from "../img/fedi.jpg";
 import corniceFioriImg from "../img/cornice-fiori.png";
 import honeyMoonImg from "../img/honey-moon.jpg";
+import honeyMoonLeftImg from "../img/honey-moon-left.jpg";
+import honeyMoonRightImg from "../img/honey-moon-right.jpg";
 import chiesaImg from "../img/chiesa.png";
 import ristoranteImg from "../img/ristorante.jpg";
 import flowersImg from "../img/flowers2.png";
-import Photograph from '../components/Photograph.astro';
 ---
 
 <Layout title="Matrimonio Marco e Katia">
@@ -46,7 +48,7 @@ import Photograph from '../components/Photograph.astro';
 				<b>Orario 8:00 - link alla mappa</b>
 				<div class="relative">
 					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores natus totam pariatur laborum aperiam tenetur amet ipsa praesentium, dicta eius magnam harum repellat dolor molestiae accusantium odit recusandae! Non, nulla?</p>
-					<img src={flowersImg.src} alt="" class="w-48 h-48 absolute -left-20 -bottom-20 -z-10 hidden md:block">
+					<img src={flowersImg.src} alt="" class="w-48 h-48 absolute -left-20 -bottom-20 -z-10 hidden xl:block">
 				</div>
 			</div>
 			<div class="col-span-4 order-1 md:order-2">
@@ -62,19 +64,21 @@ import Photograph from '../components/Photograph.astro';
 				<b>Orario 14:00 - link alla mappa</b>
 				<div class="relative">
 					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim autem natus dolores maiores suscipit mollitia doloribus, fugiat iusto aspernatur dolorem id, explicabo iure dolor placeat totam reprehenderit voluptate est architecto!</p>
-					<img src={flowersImg.src} alt="" class="w-48 h-48 absolute -right-20 -bottom-20 -z-10 scale-x-[-1] hidden md:block">
+					<img src={flowersImg.src} alt="" class="w-48 h-48 absolute -right-20 -bottom-20 -z-10 scale-x-[-1] hidden xl:block">
 				</div>
 			</div>
 			<div class="col-span-12 flex justify-center pt-12 order-5">
 				<Button>Vai al programma esteso</Button>
 			</div>
 		</Section>
-		<Section id="present" bgColor='bg-light-yellow'>
+		<Section id="present" bgColor='bg-light-yellow relative'>
 			<div class="col-span-8 order-2 md:order-1">
 				<SectionTitle>Cosa ci piacerebbe</SectionTitle>
 				<p>Sezione che rimanda all’attenzione sul regalo di nozze e sulla mail di risposta.</p>
 			</div>
 			<img src={honeyMoonImg.src} class="col-span-4 mt-[-2.5rem] md:mt-[-5rem] order-1 md:order-2" />
+			<img src={honeyMoonLeftImg.src} alt="" class="absolute left-0 bottom-0 w-16 hidden lg:block">
+			<img src={honeyMoonRightImg.src} alt="" class="absolute right-0 bottom-0 w-20 hidden lg:block">
 		</Section>
 	</main>
 </Layout>
