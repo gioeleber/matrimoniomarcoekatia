@@ -17,7 +17,7 @@ const { links } = Astro.props;
 
 <header class="sticky top-0 z-10 bg-white px-5 py-3 drop-shadow-md">
   <nav class="flex justify-center md:justify-between items-center relative">
-    <h1 class="font-serif text-3xl">Matrimonio Marco e Katia</h1>
+    <a href="/matrimoniomarcoekatia"><h1 class="font-serif text-3xl">Matrimonio Marco e Katia</h1></a>
     <ul class="gap-x-6 hidden md:flex md:static absolute bg-white top-8 w-full rounded-lg drop-shadow-md md:drop-shadow-none md:w-auto items-center" id="menu" role="menu" aria-labelledby="menubutton">
       {links.map(link => 
         <li class={link.isButton? "flex justify-center pb-1 px-1 md:p-0": ""}>
@@ -27,7 +27,7 @@ const { links } = Astro.props;
             </Button>:
             <a
               class="px-4 py-2 inline-block w-full md:p-0 text-center hover:underline"
-              href={`#${link.href}`}
+              href={`${link.href}`}
             >
               {link.label}
             </a>

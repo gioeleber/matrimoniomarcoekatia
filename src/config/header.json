@@ -1,5 +1,6 @@
 [
-  { "href": "time-location", "label": "Orario e location" },
-  { "href": "present", "label": "Il regalo" },
-  { "href": "adhesion", "label": "Conferma ora", "isButton": true }
+  { "href": "#time-location", "label": "Orario e location" },
+  { "href": "#present", "label": "Il regalo" },
+  { "href": "/matrimoniomarcoekatia/programma", "label": "Programma" },
+  { "href": "#adhesion", "label": "Conferma ora", "isButton": true }
 ]
