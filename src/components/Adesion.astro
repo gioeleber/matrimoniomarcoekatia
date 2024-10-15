@@ -1,0 +1,19 @@
+---
+import Section from "../layouts/Section.astro";
+import corniceFioriImg from "../img/cornice-fiori.jpg";
+import SectionTitle from "./SectionTitle.astro";
+import Button from "./Button.astro";
+---
+
+<Section id="adhesion" bgColor='bg-light-peach'>
+  <div class="col-span-4">
+    <img src={corniceFioriImg.src} alt="">
+  </div>
+  <div class="col-span-8 [&>p]:mb-3">
+    <SectionTitle>Facci sapere se ci sarai</SectionTitle>
+    <p>Se ti interessa essere dei nostri, blocca subito la data nella tua agenda.</p>
+    <p>Puoi confermare la partecipazione compilando un breve form in cui ci fornirai tutte le informazioni che ci servono per organizzare una festa speciale.</p>
+    <p class="mb-8">Dopo aver inserito le informazioni richieste, clicca su invia e riceverai una email di risposta con tutte le informazioni su come partecipare al regalo di nozze (se lo vorrai ovviamente).</p>
+    <Button>Conferma la tua prenotazione</Button>
+  </div>
+</Section>
