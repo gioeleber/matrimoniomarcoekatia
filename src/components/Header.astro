@@ -22,7 +22,7 @@ const { links } = Astro.props;
       {links.map(link => 
         <li class={link.isButton? "flex justify-center pb-1 px-1 md:p-0": ""}>
           {link.isButton?
-            <Button customClass="w-full">
+            <Button customClass="w-full" as="a" href="https://docs.google.com/forms/d/1Fm3SGRe16wvyK2l0lkM69xbjoU0Cuvj1xozaW9cOH5A/edit?usp=drivesdk" target="_blank">
               {link.label}
             </Button>:
             <a
